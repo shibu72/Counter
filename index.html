@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="grid gap-8 w-fit m-auto p-10 shadow-md shadow-[#2a2a2a50] bg-white rounded-lg absolute top-[50%]  left-[50%] -translate-x-[50%] -translate-y-[50%]">
+    <!-- Counter Heading Title -->
+    <h1 class="text-3xl tracking-wider font-medium text-center">Counter</h1>
+
+    <!-- Counter Values -->
+    
+       <div class="grid gap-4 items-center text-green-500 text-center">
+         <span class="text-3xl text-center w-fit m-auto" id="output">0</span>
+         <div  class="flex justify-around">
+           <button class="bg-green-600 hover:bg-green-700 text-white capitalize py-3 px-6 rounded" onclick="increment()">increase</button>
+           <button class="bg-yellow-500 hover:bg-yellow-600 text-white capitalize py-3 px-6 rounded" onclick="reset()">reset</button>
+           <button class="bg-green-600 hover:bg-green-700 text-white capitalize py-3 px-6 rounded"  onclick="decrement()">decrease</button>
+         </div>
+       </div>
+
+    
+    <!-- Increment Input -->
+    <div class="flex gap-2">
+      <input class="capitalize py-2 px-3 text-lg outline-none shadow shadow-[#2a2a2a80] rounded inline" id="input" type="number" placeholder="enter increment value">
+      <button class="bg-green-600 hover:bg-green-700 text-white capitalize py-3 px-6 rounded" onclick="submit()">submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
