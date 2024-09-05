@@ -1,6 +1,7 @@
 let output = document.getElementById("output");
 let input = document.getElementById("input");
 let value = 0;
+// using localStorage
 let store = localStorage;
 
 function update() {
