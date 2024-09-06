@@ -1,7 +1,7 @@
 let output = document.getElementById("output");
 let input = document.getElementById("input");
 let value = 0;
-// using localStorage
+// using localStorage for store counting numbers
 let store = localStorage;
 
 function update() {
